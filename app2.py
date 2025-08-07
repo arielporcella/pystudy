@@ -1,4 +1,7 @@
 import streamlit as st
+import pandas as pd
 
-st.title("Meu primeiro app")
-st.write("Esse app foi publicado no GitHub com Streamlit.")
+df_reviews = pd.read_csv("datasets/customer reviews.csv")
+df_top100books = pd.read_csv("datasets/Top-100 Trending Books.csv")
+
+df_reviews
