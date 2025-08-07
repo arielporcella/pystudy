@@ -1,5 +1,4 @@
-import sys
-from streamlit.web import cli as stcli
+import streamlit as st
 
-sys.argv = ["streamlit", "run", "app2.py"}
-sys.exit(stcli.main())
+st.title("Meu primeiro app")
+st.write("Esse app foi publicado no GitHub com Streamlit.")
