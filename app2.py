@@ -1,5 +1,4 @@
-import sys
-from streamlit.web import cli as stcli
+import streamlit as st
 
-sys.argv = ["streamlit", "run", "app2.py"}
-sys.exit(stcli.main())
+st.title("Funcionando!")
+st.write("Esse app está rodando direto do GitHub.")
