@@ -1,7 +1,5 @@
-import streamlit as st
-import pandas as pd
+import sys
+from streamlit.web import cli as stcli
 
-df_reviews = pd.read_csv("datasets/customer reviews.csv")
-df_top100books = pd.read_csv("datasets/Top-100 Trending Books.csv")
-
-df_reviews
+sys.argv = ["streamlit", "run", "app2.py"}
+sys.exit(stcli.main())
